@@ -1,4 +1,4 @@
-<?php require_once \ishop\ErrorHandler::class ?>
+<?php require_once CORE . '/ErrorHandler.php' ?>
 <!doctype html>
 <html lang="en">
 <head>
