@@ -1,5 +1,6 @@
 /.idea/
 /vendor/composer/
 /vendor/autoload.php
+/vendor/gabordemooij/
 /tmp/
 
