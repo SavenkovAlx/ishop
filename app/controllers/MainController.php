@@ -11,8 +11,9 @@ class MainController extends AppController
     {
         $ids = [3, 4, 32];
         $brands = R::find('brand', ' id IN ( ' . R::genSlots($ids) . ' ) ', $ids);
+        $hits = R::find('product', "hit = '1' AND status = '1' LIMIT 8");
         $this->setMeta('Main page', 'description...', 'keys....');
-        $this->set(compact('brands'));
+        $this->set(compact('brands', 'hits'));
     }
 
 }
