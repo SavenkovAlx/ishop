@@ -21,7 +21,7 @@ class App
         $params = require_once CONF . '/params.php';
         if (!empty($params)) {
             foreach ($params as $k => $v) {
-                self::$app->setPropery($k, $v);
+                self::$app->setProperty($k, $v);
             }
         }
     }
